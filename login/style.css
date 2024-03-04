@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  border: 1px solid rgb(90, 87, 87);
+  box-sizing: border-box;
+  border-radius: 15px;
+  min-height: 65vh;
+  min-width: 28vw;
+  backdrop-filter: blur(10px);
+  background: transparent;
+  box-shadow: 8px 8px 5px #333;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(pic.jpg) no-repeat;
+  backdrop-filter: blur(10px);
+  background-position: center;
+  background-size: cover;
+}
+.col {
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  background: transparent;
+  color: black;
+  font-size: 1em;
+  align-content: center;
+  font-weight: 200;
+}
+input {
+  padding: 0.5em;
+  margin: 0.5em;
+  width: 100%;
+  border: 1px solid #333;
+  color: #070606;
+  border-radius: 10px 12px 12px 13px;
+}
+button {
+  height: 6vh;
+  width: 7vw;
+  margin: 0.7em;
+  padding: 0.5em;
+  margin-bottom: 1.2em;
+  box-shadow: 2px 2px 2px;
+  background-color: rgb(29, 159, 168);
+  border: 1px solid rgb(29, 159, 168);
+  border-radius: 10px;
+  color: black;
+}
+button:link {
+  background-color: rgb(6, 89, 92);
+}
+button:active {
+  background-color: rgb(5, 120, 124);
+}
+button:hover {
+  background-color: rgb(87, 240, 245);
+}
+button:visited {
+  background-color: rgb(46, 232, 238);
+}
+label {
+  padding: 0.3em;
+}
+h1 {
+  font-size: 2em;
+  text-align: center;
+  padding: 1em 1.2em;
+}
+.remember {
+  display: flex;
+  justify-content: flex-start;
+}
+.remember a {
+  align-items: flex-end;
+  padding-left: 0.5em;
+}
+.remember a:hover {
+  background: brown;
+}
+@media screen and (min-height: 600px) {
+  .container {
+    width: 100%;
+  }
+}
+@media screen and (min-height: 900px) {
+  .container {
+    width: 40%;
+  }
+}
